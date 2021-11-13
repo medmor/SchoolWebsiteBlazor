@@ -13,22 +13,10 @@ jobs:
     # uses GitHub's checkout action to checkout code form the master branch
     - uses: actions/checkout@v2
 
-    # sets up .NET Core SDK 6
-    - name: Setup .NET Core SDK
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version:  '6.0.x'
-
-    # publishes Blazor project to the release-folder
-    - name: Publish .NET Core Project
-      run: dotnet publish ./SchoolWebsite/SchoolWebsite.csproj -c Release -o docs --nologo
-
-    # changes the base-tag in index.html from '/' to 'BlazorGitHubPagesDemo' to match GitHub Pages repository subdirectory
+      # changes the base-tag in index.html from '/' to 'BlazorGitHubPagesDemo' to match GitHub Pages repository subdirectory
     - name: Change base-tag in index.html from / to SchoolWebsiteBlazor
       run: sed -i 's/<base href="\/" \/>/<base href="\/SchoolWebsiteBlazor\/" \/>/g' SchoolWebsite/docs/wwwroot/SchoolWebsiteBlazor/index.html
     
-
-
     # copy index.html to 404.html to serve the same file when a file is not found
     - name: copy index.html to 404.html
       run: cp SchoolWebsite/docs/wwwroot/SchoolWebsiteBlazor/index.html SchoolWebsite/docs/wwwroot/SchoolWebsiteBlazor/404.html
