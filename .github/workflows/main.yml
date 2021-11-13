@@ -29,10 +29,11 @@ jobs:
     
     # changes the _framework and _content in index.html to framework and content
     - name: Change _framework and _content to framework and content
-      run: sed -i 's/_framework/framework/" \/>/g' SchoolWebsite/docs/wwwroot/SchoolWebsiteBlazor/index.html
-      run: sed -i 's/_content/content/" \/>/g' SchoolWebsite/docs/wwwroot/SchoolWebsiteBlazor/index.html
-      run: mv SchoolWebsite/docs/wwwroot/SchoolWebsiteBlazor/_framework SchoolWebsite/docs/wwwroot/SchoolWebsiteBlazor/framework
-      run: mv SchoolWebsite/docs/wwwroot/SchoolWebsiteBlazor/_content SchoolWebsite/docs/wwwroot/SchoolWebsiteBlazor/conent
+      run: | 
+        sed -i 's/_framework/framework/" \/>/g' SchoolWebsite/docs/wwwroot/SchoolWebsiteBlazor/index.html
+        sed -i 's/_content/content/" \/>/g' SchoolWebsite/docs/wwwroot/SchoolWebsiteBlazor/index.html
+        mv SchoolWebsite/docs/wwwroot/SchoolWebsiteBlazor/_framework SchoolWebsite/docs/wwwroot/SchoolWebsiteBlazor/framework
+        mv SchoolWebsite/docs/wwwroot/SchoolWebsiteBlazor/_content SchoolWebsite/docs/wwwroot/SchoolWebsiteBlazor/conent
 
     # copy index.html to 404.html to serve the same file when a file is not found
     - name: copy index.html to 404.html
