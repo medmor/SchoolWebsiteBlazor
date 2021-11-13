@@ -35,7 +35,7 @@
                     var projectTitle = @localizer["project" + i + ".title"];
                     var projectPath = @localizer["project" + i + ".path"];
                     <div class="col-sm-6">
-                        <HxCard CssClass="shadow border-0">
+                        <HxCard CssClass="shadow border-0 my-3">
                             <BodyTemplate>
                                 <HxCardTitle><h3>@projectTitle</h3></HxCardTitle>
                                 <HxCardText>@projectTitle</HxCardText>
@@ -55,7 +55,7 @@
 
 
 @code {
-    int NumberOfProjects = 2;
+    int NumberOfProjects = 3;
     public void GoToProject(string path)
     {
         NavManager.NavigateTo("/informaticsClub" + path);

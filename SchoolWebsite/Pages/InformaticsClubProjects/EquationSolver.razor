@@ -1,0 +1,55 @@
+﻿@page "/informaticsClub/equation-solver"
+@inject IStringLocalizer<Resources.InformaticsClub.Lang> localizer
+
+<div class="container p-3">
+    <HxCard CssClass="shadow mt-5">
+        <HeaderTemplate>
+            <h2 class="card-title">Programme simple pour résoudre une équation du premier degré</h2>
+        </HeaderTemplate>
+        <BodyTemplate>
+            <h1 class="my-5 text-center">
+                <input class="text-center" type="number" @bind="a" placeholder="a" style="width:20%;">
+                X +
+                <input class="text-center" type="number" @bind="b" placeholder="b" style="width:20%;">
+                = 0
+            </h1>
+            @if (Result != null)
+            {
+
+                <h1 class="my-5 text-center">@Result</h1>
+            }
+            <div class="text-center my-2">
+                <HxButton class="btn btn-dark" OnClick="Solve">Résoudre</HxButton>
+            </div>
+        </BodyTemplate>
+    </HxCard>
+</div>
+
+@code {
+    int? a = null;
+    int? b = null;
+    string? Result = null;
+
+
+    void Solve()
+    {
+        if (this.a == null)
+        {
+            this.Result = "Veuillez entrez a!";
+            return;
+        }
+        if (this.a == 0)
+        {
+            this.Result = "a ne peut pas être égale à 0!";
+            return;
+        }
+        if (this.b == null)
+        {
+            this.Result = "Veuillez entrez b!";
+            return;
+        }
+
+        this.Result = $"X = - {this.b} / {this.a} = {((float)-this.b / this.a)?.ToString("N2")}";
+
+    }
+}

@@ -232,6 +232,24 @@ namespace SchoolWebsite.Resources.InformaticsClub {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to /equation-solver.
+        /// </summary>
+        public static string project3_path {
+            get {
+                return ResourceManager.GetString("project3.path", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Résoudre une équation du premier degré.
+        /// </summary>
+        public static string project3_title {
+            get {
+                return ResourceManager.GetString("project3.title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Voir.
         /// </summary>
         public static string projects_button_show {
