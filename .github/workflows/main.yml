@@ -23,10 +23,17 @@ jobs:
     - name: Publish .NET Core Project
       run: dotnet publish ./SchoolWebsite/SchoolWebsite.csproj -c Release -o docs --nologo
 
-      # changes the base-tag in index.html from '/' to 'BlazorGitHubPagesDemo' to match GitHub Pages repository subdirectory
+    # changes the base-tag in index.html from '/' to 'BlazorGitHubPagesDemo' to match GitHub Pages repository subdirectory
     - name: Change base-tag in index.html from / to SchoolWebsiteBlazor
       run: sed -i 's/<base href="\/" \/>/<base href="\/SchoolWebsiteBlazor\/" \/>/g' SchoolWebsite/docs/wwwroot/SchoolWebsiteBlazor/index.html
     
+    # changes the _framework and _content in index.html to framework and content
+    - name: Change _framework and _content to framework and content
+      run: sed -i 's/_framework/framework/" \/>/g' SchoolWebsite/docs/wwwroot/SchoolWebsiteBlazor/index.html
+      run: sed -i 's/_content/content/" \/>/g' SchoolWebsite/docs/wwwroot/SchoolWebsiteBlazor/index.html
+      run: mv SchoolWebsite/docs/wwwroot/SchoolWebsiteBlazor/_framework SchoolWebsite/docs/wwwroot/SchoolWebsiteBlazor/framework
+      run: mv SchoolWebsite/docs/wwwroot/SchoolWebsiteBlazor/_content SchoolWebsite/docs/wwwroot/SchoolWebsiteBlazor/conent
+
     # copy index.html to 404.html to serve the same file when a file is not found
     - name: copy index.html to 404.html
       run: cp SchoolWebsite/docs/wwwroot/SchoolWebsiteBlazor/index.html SchoolWebsite/docs/wwwroot/SchoolWebsiteBlazor/404.html
