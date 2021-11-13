@@ -31,6 +31,7 @@ jobs:
     - name: Change _framework and _content to framework and content
       run: | 
         sed -i 's/_framework/framework/g' SchoolWebsite/docs/wwwroot/SchoolWebsiteBlazor/index.html
+        sed -i 's/_framework/framework/g' SchoolWebsite/docs/wwwroot/SchoolWebsiteBlazor/_framework/blazor.webassembly.js
         sed -i 's/_content/content/g' SchoolWebsite/docs/wwwroot/SchoolWebsiteBlazor/index.html
         mv SchoolWebsite/docs/wwwroot/SchoolWebsiteBlazor/_framework SchoolWebsite/docs/wwwroot/SchoolWebsiteBlazor/framework
         mv SchoolWebsite/docs/wwwroot/SchoolWebsiteBlazor/_content SchoolWebsite/docs/wwwroot/SchoolWebsiteBlazor/conent
