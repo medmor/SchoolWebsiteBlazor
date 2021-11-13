@@ -1,0 +1,13 @@
+﻿@page "/"
+@inject NavigationManager NavManager
+
+<div>home</div>
+
+
+@code {
+    protected override void OnInitialized()
+    {
+
+        NavManager.NavigateTo("/home");
+    }
+}
