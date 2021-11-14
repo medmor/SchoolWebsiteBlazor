@@ -174,11 +174,41 @@
   <data name="project2.title" xml:space="preserve">
     <value>Deviner le nombre</value>
   </data>
+  <data name="project3.button" xml:space="preserve">
+    <value>Résoudre</value>
+  </data>
+  <data name="project3.heading" xml:space="preserve">
+    <value>Programme simple pour résoudre une équation du premier degré</value>
+  </data>
   <data name="project3.path" xml:space="preserve">
     <value>/equation-solver</value>
   </data>
+  <data name="project3.result1" xml:space="preserve">
+    <value>Veuillez entrez a!</value>
+  </data>
+  <data name="project3.result2" xml:space="preserve">
+    <value>"a : ne peut pas être égale à 0!"</value>
+  </data>
+  <data name="project3.result3" xml:space="preserve">
+    <value>"Veuillez entrez b!"</value>
+  </data>
   <data name="project3.title" xml:space="preserve">
     <value>Résoudre une équation du premier degré</value>
+  </data>
+  <data name="project4.button.reset" xml:space="preserve">
+    <value>Réinitialiser</value>
+  </data>
+  <data name="project4.button.start" xml:space="preserve">
+    <value>Démarrer</value>
+  </data>
+  <data name="project4.button.stop" xml:space="preserve">
+    <value>Arrêter</value>
+  </data>
+  <data name="project4.path" xml:space="preserve">
+    <value>/stopwatch</value>
+  </data>
+  <data name="project4.title" xml:space="preserve">
+    <value>Chronomètre</value>
   </data>
   <data name="projects.button.show" xml:space="preserve">
     <value>Voir</value>

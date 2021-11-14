@@ -4,7 +4,7 @@
 <div class="container p-3">
     <HxCard CssClass="shadow mt-5">
         <HeaderTemplate>
-            <h2 class="card-title">Programme simple pour résoudre une équation du premier degré</h2>
+            <h2 class="card-title">@localizer["project3.heading"]</h2>
         </HeaderTemplate>
         <BodyTemplate>
             <h1 class="my-5 text-center">
@@ -19,7 +19,7 @@
                 <h1 class="my-5 text-center">@Result</h1>
             }
             <div class="text-center my-2">
-                <HxButton class="btn btn-dark" OnClick="Solve">Résoudre</HxButton>
+                <HxButton class="btn btn-dark" OnClick="Solve">@localizer["project3.button"]</HxButton>
             </div>
         </BodyTemplate>
     </HxCard>
@@ -33,23 +33,23 @@
 
     void Solve()
     {
-        if (this.a == null)
+        if (a == null)
         {
-            this.Result = "Veuillez entrez a!";
+            Result = localizer.GetString("project3.result1");
             return;
         }
-        if (this.a == 0)
+        if (a == 0)
         {
-            this.Result = "a ne peut pas être égale à 0!";
+            Result = localizer.GetString("project3.result2");
             return;
         }
-        if (this.b == null)
+        if (b == null)
         {
-            this.Result = "Veuillez entrez b!";
+            Result = localizer.GetString("project3.result3");
             return;
         }
 
-        this.Result = $"X = - {this.b} / {this.a} = {((float)-this.b / this.a)?.ToString("N2")}";
+        Result = $"X = - {b} / {a} = {((float)-b / a)?.ToString("N2")}";
 
     }
 }

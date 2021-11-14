@@ -232,6 +232,24 @@ namespace SchoolWebsite.Resources.InformaticsClub {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Résoudre.
+        /// </summary>
+        public static string project3_button {
+            get {
+                return ResourceManager.GetString("project3.button", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Programme simple pour résoudre une équation du premier degré.
+        /// </summary>
+        public static string project3_heading {
+            get {
+                return ResourceManager.GetString("project3.heading", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to /equation-solver.
         /// </summary>
         public static string project3_path {
@@ -241,11 +259,83 @@ namespace SchoolWebsite.Resources.InformaticsClub {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Veuillez entrez a!.
+        /// </summary>
+        public static string project3_result1 {
+            get {
+                return ResourceManager.GetString("project3.result1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &quot;a : ne peut pas être égale à 0!&quot;.
+        /// </summary>
+        public static string project3_result2 {
+            get {
+                return ResourceManager.GetString("project3.result2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &quot;Veuillez entrez b!&quot;.
+        /// </summary>
+        public static string project3_result3 {
+            get {
+                return ResourceManager.GetString("project3.result3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Résoudre une équation du premier degré.
         /// </summary>
         public static string project3_title {
             get {
                 return ResourceManager.GetString("project3.title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Réinitialiser.
+        /// </summary>
+        public static string project4_button_reset {
+            get {
+                return ResourceManager.GetString("project4.button.reset", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Démarrer.
+        /// </summary>
+        public static string project4_button_start {
+            get {
+                return ResourceManager.GetString("project4.button.start", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Arrêter.
+        /// </summary>
+        public static string project4_button_stop {
+            get {
+                return ResourceManager.GetString("project4.button.stop", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to /stopwatch.
+        /// </summary>
+        public static string project4_path {
+            get {
+                return ResourceManager.GetString("project4.path", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Chronomètre.
+        /// </summary>
+        public static string project4_title {
+            get {
+                return ResourceManager.GetString("project4.title", resourceCulture);
             }
         }
         
