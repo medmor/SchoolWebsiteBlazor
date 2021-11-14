@@ -216,4 +216,10 @@
   <data name="projectsTitle" xml:space="preserve">
     <value>Exemples de projets à réaliser durant les séances</value>
   </data>
+  <data name="project5.title" xml:space="preserve">
+    <value>Calculatrice</value>
+  </data>
+  <data name="project5.path" xml:space="preserve">
+    <value>/calculator</value>
+  </data>
 </root>

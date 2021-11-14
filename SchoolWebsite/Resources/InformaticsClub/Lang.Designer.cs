@@ -340,6 +340,24 @@ namespace SchoolWebsite.Resources.InformaticsClub {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to /calculator.
+        /// </summary>
+        public static string project5_path {
+            get {
+                return ResourceManager.GetString("project5.path", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Calculatrice.
+        /// </summary>
+        public static string project5_title {
+            get {
+                return ResourceManager.GetString("project5.title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Voir.
         /// </summary>
         public static string projects_button_show {
