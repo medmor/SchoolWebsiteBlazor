@@ -1,11 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
 
 	<PropertyGroup>
-		<StaticWebAssetBasePath>/SchoolWebsiteBlazor/</StaticWebAssetBasePath>
 		<TargetFramework>net6.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<BlazorWebAssemblyLoadAllGlobalizationData>true</BlazorWebAssemblyLoadAllGlobalizationData>
-
 	</PropertyGroup>
 
 	<ItemGroup>
