@@ -17,11 +17,11 @@
         <HxNavbarToggler />
         <HxNavbarCollapse>
             <HxNav CssClass="me-auto mb-2 mb-lg-0">
-                <HxNavLink OnClick="@(()=>{NavigateTo("home");})">@localizer["list.home"]</HxNavLink>
-                <HxNavLink Href="/reglement">@localizer["list.reglement"]</HxNavLink>
-                <HxNavLink Href="/historic">@localizer["list.historic"]</HxNavLink>
-                <HxNavLink Href="/events">@localizer["list.events"]</HxNavLink>
-                <HxNavLink Href="/informaticsClub">@localizer["list.informaticsClub"]</HxNavLink>
+                <HxNavLink Href="home">@localizer["list.home"]</HxNavLink>
+                <HxNavLink Href="reglement">@localizer["list.reglement"]</HxNavLink>
+                <HxNavLink Href="historic">@localizer["list.historic"]</HxNavLink>
+                <HxNavLink Href="events">@localizer["list.events"]</HxNavLink>
+                <HxNavLink Href="informaticsClub">@localizer["list.informaticsClub"]</HxNavLink>
             </HxNav>
             <HxDropdown>
                 <HxDropdownToggleButton Color="ThemeColor.Light">&nbsp;@localizer["button.language"]&nbsp;</HxDropdownToggleButton>
@@ -34,12 +34,3 @@
 
     </div>
 </HxNavbar>
-
-@code {
-    void NavigateTo(string url)
-    {
-
-        NavManager.NavigateTo(url);
-
-    }
-}
