@@ -15,21 +15,21 @@ jobs:
 
       # changes the base-tag in index.html from '/' to 'BlazorGitHubPagesDemo' to match GitHub Pages repository subdirectory
     - name: Change base-tag in index.html from / to SchoolWebsiteBlazor
-      run: sed -i 's/<base href="\/" \/>/<base href="\/SchoolWebsiteBlazor\/" \/>/g' SchoolWebsite/docs/wwwroot/index.html
+      run: sed -i 's/<base href="\/" \/>/<base href="\/SchoolWebsiteBlazor\/" \/>/g' SchoolWebsite/docs/wwwroot/SchoolWebsiteBlazor/index.html
     
     # copy index.html to 404.html to serve the same file when a file is not found
     - name: copy index.html to 404.html
-      run: cp SchoolWebsite/docs/wwwroot/index.html SchoolWebsite/docs/wwwroot/404.html
+      run: cp SchoolWebsite/docs/wwwroot/SchoolWebsiteBlazor/index.html SchoolWebsite/docs/wwwroot/SchoolWebsiteBlazor/404.html
 
     # add .nojekyll file to tell GitHub pages to not treat this as a Jekyll project. (Allow files and folders starting with an underscore)
     - name: Add .nojekyll file
-      run: touch SchoolWebsite/docs/wwwroot/.nojekyll
+      run: touch SchoolWebsite/docs/wwwroot/SchoolWebsiteBlazor/.nojekyll
 
     - name: Commit wwwroot to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@3.7.1
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
-        FOLDER: SchoolWebsite/docs/wwwroot/
+        FOLDER: SchoolWebsite/docs/wwwroot/SchoolWebsiteBlazor/
 
 
