@@ -28,7 +28,7 @@
       "Microsoft.JSInterop.dll": "sha256-1HmhQjtkNER1s7c5hmtiQC\/mZHwLjUjCO8X2KiLIXy0=",
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-vnE\/f0iqOlVKaRjTpLiArMb+lw6INqH0HhqcMh9FPe0=",
       "netstandard.dll": "sha256-j9vfTNQidkLz1le8CuX8m0X8kstbOruCEN9Se+eqrXQ=",
-      "SchoolWebsite.dll": "sha256-2kWxYF82Q4OVZ8NB2TISuqZ7vQZsHpKzzdkrPmaGJzo=",
+      "SchoolWebsite.dll": "sha256-EzKYKk2OGLUsTCQaKdgjzyzGOU0VONO8kb08ANTm4\/4=",
       "System.Collections.Concurrent.dll": "sha256-E3zKyPRbOlK0zr1I9Eeg+1bvLoCMbW9olWbeRwWJ7uM=",
       "System.Collections.dll": "sha256-PGM66mleCks9nEGNKGUrbk1WS74eQ1i35dPRdYHeFX4=",
       "System.Collections.NonGeneric.dll": "sha256-QVV5v6Y3KEb6dTAKJUhZ4qTULK85gH5eeHkHwZTlv6U=",
@@ -78,7 +78,7 @@
     },
     "satelliteResources": {
       "ar": {
-        "ar\/SchoolWebsite.resources.dll": "sha256-IZ0Pw5gq83EkXGcLPZ0ob1Bw1JgIt74sMWD0xZaJ+ew="
+        "ar\/SchoolWebsite.resources.dll": "sha256-qQ5EGASWTbuQAc5\/KteetS7wVc1ZQUIdt3nuzxf\/pig="
       },
       "cs": {
         "cs\/Havit.Blazor.Components.Web.Bootstrap.resources.dll": "sha256-2bE1Pf8Wl9sYLREfmJ3bPXtGPzYHUXihWMaAKWGlC6k="

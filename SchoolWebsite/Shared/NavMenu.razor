@@ -3,14 +3,12 @@
 @inject ILogger<string> logger
 
 <HxNavbar Color="ThemeColor.Dark" ColorScheme="NavbarColorScheme.Dark">
-    <HxNavbarBrand CssClass="text-success">
+    <HxNavbarBrand Href="" CssClass="text-success">
         <h3>@localizer["brand.heading"]</h3>
         <small>@localizer["brand.small"]</small>
     </HxNavbarBrand>
-    <div class="d-flex">
-        <HxButton Text="@localizer["button.identification"]" Color="ThemeColor.Success" />
+    <HxButton Text="@localizer["button.identification"]" Color="ThemeColor.Success" />
 
-    </div>
 </HxNavbar>
 <HxNavbar CssClass="sticky-top" Color="ThemeColor.Dark" ColorScheme="NavbarColorScheme.Dark" Expand="NavbarExpand.SmallUp">
     <div class="container">
