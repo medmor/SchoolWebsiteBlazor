@@ -1,4 +1,5 @@
 ﻿@inject IStringLocalizer<Resources.Navbar.Lang> localizer
+@inject NavigationManager NavMangaer
 
 <HxNavbar Color="ThemeColor.Dark" ColorScheme="NavbarColorScheme.Dark">
     <HxNavbarBrand CssClass="text-success">
@@ -15,7 +16,7 @@
         <HxNavbarToggler />
         <HxNavbarCollapse>
             <HxNav CssClass="me-auto mb-2 mb-lg-0">
-                <HxNavLink Href="/SchoolWebsiteBlazor/home">@localizer["list.home"]</HxNavLink>
+                <HxNavLink OnClick="@(()=>{NavigateTo("/home");})">@localizer["list.home"]</HxNavLink>
                 <HxNavLink Href="/reglement">@localizer["list.reglement"]</HxNavLink>
                 <HxNavLink Href="/historic">@localizer["list.historic"]</HxNavLink>
                 <HxNavLink Href="/events">@localizer["list.events"]</HxNavLink>
@@ -33,3 +34,9 @@
     </div>
 </HxNavbar>
 
+@code {
+    void NavigateTo(string url)
+    {
+        NavManager.NavigateTo(url);
+    }
+}
