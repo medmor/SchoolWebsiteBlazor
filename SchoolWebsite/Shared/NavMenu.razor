@@ -1,5 +1,6 @@
 ﻿@inject IStringLocalizer<Resources.Navbar.Lang> localizer
 @inject NavigationManager NavMangaer
+@inject ILogger<string> logger
 
 <HxNavbar Color="ThemeColor.Dark" ColorScheme="NavbarColorScheme.Dark">
     <HxNavbarBrand CssClass="text-success">
@@ -37,6 +38,13 @@
 @code {
     void NavigateTo(string url)
     {
-        NavManager.NavigateTo(url);
+        if (NavManager.Uri.Contains("SchoolWebsiteBlazor"))
+        {
+            NavManager.NavigateTo("SchoolWebsiteBlazor/" + url);
+        }
+        else
+        {
+            NavManager.NavigateTo(url);
+        }
     }
 }
