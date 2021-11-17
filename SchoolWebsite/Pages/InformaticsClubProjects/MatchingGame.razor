@@ -1,0 +1,173 @@
+﻿@page "/informaticsClub/matching-game"
+@inject IStringLocalizer<Resources.InformaticsClub.Lang> localizer
+@inject IJSRuntime JsRuntime
+<div class="container card-game">
+    <HxCard CssClass="mt-3 shadow">
+        <HeaderTemplate>
+            <h2 class="card-title">@localizer["project6.heading"]</h2>
+            <div class="d-md-flex  justify-content-between" dir="ltr">
+                @if (gameState != GameStates.Intro)
+                {
+                    <h4>@localizer["project6.errors"] @errors</h4>
+                }
+                @if (gameState != GameStates.Running)
+                {
+                    <HxButtonGroup>
+                        <HxButton style="@GridSizeButtonsOpacityStyle(4)" OnClick="@(()=>{gridSize = 4;})" Text="4" Color="ThemeColor.Success" />
+                        <HxButton style="@GridSizeButtonsOpacityStyle(16)" OnClick="@(()=>{gridSize = 16;})" Text="16" Color="ThemeColor.Warning" />
+                        <HxButton style="@GridSizeButtonsOpacityStyle(36)" OnClick="@(()=>{gridSize = 36;})" Text="36" Color="ThemeColor.Danger" />
+                    </HxButtonGroup>
+                }
+                <HxButton Color="ThemeColor.Primary" CssClass="float-end" OnClick="Restart">
+                    @StartButtonString()
+                </HxButton>
+            </div>
+        </HeaderTemplate>
+        <BodyTemplate>
+            <div class="game-container">
+                @if (gameState == GameStates.Running)
+                {
+                    <div class="grid" style="grid-template-columns:@gridTemplate; grid-template-rows:@gridTemplate;">
+                        @for (var i = 0; i < cardsNumbers.Count; i++)
+                        {
+                            var numb = cardsNumbers[i];
+                            var index = i;
+                            <div class="cell" onclick="@(()=>CellClick(numb, index))" style="font-size:@cellFontSize;">
+                                @numb
+                                @if (DisplayMask(index, numb))
+                                {
+                                    <div [id]="i" class="mask"></div>
+                                }
+                            </div>
+                        }
+                    </div>
+                }
+            </div>
+
+        </BodyTemplate>
+    </HxCard>
+</div>
+
+@code {
+    enum GameStates { Intro, Running, GameOver };
+    struct Card { public int numb; public int index; public Card(int n, int i) { numb = n; index = i; } }
+    struct WindowDimension { public int Width { get; set; } public int Height { get; set; } }
+    GameStates gameState = GameStates.Intro;
+    int gridSize = 4;
+    List<int> cardsNumbers = new List<int>();
+    string cellFontSize = "100%";
+    string gridTemplate = "";
+    Card firstCard = new Card(-1, -1);
+    Card secondCard = new Card(-1, -1);
+    List<int> foundCards = new List<int>();
+    int errors = 0;
+
+    async Task FillCardsNumbers()
+    {
+        await GridStyleConfig();
+        cardsNumbers.Clear();
+        var cellsPerColumn = gridSize / 2;
+        for (var i = 0; i < cellsPerColumn; i++)
+        {
+            cardsNumbers.Add(i);
+        }
+        for (var i = 0; i < cellsPerColumn; i++)
+        {
+            cardsNumbers.Add(i);
+        }
+    }
+
+    async Task GridStyleConfig()
+    {
+        var v = "vw";
+        var dimension = await JsRuntime.InvokeAsync<WindowDimension>("getWindowDimensions");
+        if (dimension.Width > dimension.Height)
+        {
+            v = "vh";
+        }
+        int cellsPerColumn = (int)Math.Sqrt(gridSize);
+        var cellSize = 100 / cellsPerColumn;
+        cellFontSize = 50 / cellsPerColumn + v;
+        gridTemplate = "";
+        for (var i = 0; i < cellsPerColumn; i++)
+        {
+            gridTemplate += cellSize + "% ";
+        }
+    }
+
+    async Task CellClick(int numb, int index)
+    {
+        if (!foundCards.Contains(numb))
+        {
+            if (firstCard.numb == -1)
+            {
+                firstCard.numb = numb;
+                firstCard.index = index;
+
+            }
+            else if (secondCard.index == -1)
+            {
+                secondCard.numb = numb;
+                secondCard.index = index;
+                if (firstCard.numb == secondCard.numb)
+                {
+                    foundCards.Add(firstCard.numb);
+                    if (foundCards.Count == gridSize / 2)
+                    {
+                        await Task.Run(async () =>
+                        {
+                            await InvokeAsync(StateHasChanged);
+                            await Task.Delay(500);
+                            await Restart();
+                        });
+                    }
+                }
+                else
+                {
+                    errors++;
+                }
+                await Task.Run(async () =>
+                {
+                    await InvokeAsync(StateHasChanged);
+                    await Task.Delay(500);
+                    firstCard.numb = firstCard.index = secondCard.numb = secondCard.index = -1;
+
+                });
+            }
+        }
+        StateHasChanged();
+    }
+
+    async Task Restart()
+    {
+        await FillCardsNumbers();
+        firstCard.numb = firstCard.index = secondCard.numb = secondCard.index = -1;
+        errors = 0;
+        foundCards.Clear();
+        if (gameState == GameStates.Running)
+        {
+            gameState = GameStates.GameOver;
+        }
+        else
+        {
+            gameState = GameStates.Running;
+        }
+    }
+
+    bool DisplayMask(int i, int numb)
+    {
+        return i != firstCard.index && i != secondCard.index && !foundCards.Contains(numb);
+    }
+    string StartButtonString()
+    {
+        return gameState == GameStates.Intro ? localizer["project6.button.start"]
+        : gameState == GameStates.Running ? localizer["project6.button.stop"]
+        : localizer["project6.button.restart"];
+    }
+    string GridSizeButtonsOpacityStyle(int size)
+    {
+        return "opacity:" + (gridSize == size ? 1 : "0.5");
+    }
+}
+
+

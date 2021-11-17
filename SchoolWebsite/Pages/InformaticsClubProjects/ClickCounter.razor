@@ -2,13 +2,13 @@
 @inject IStringLocalizer<Resources.InformaticsClub.Lang> localizer
 
 <div class="container p-3">
-    <HxCard class="card shadow mt-5">
+    <HxCard CssClass="shadow mt-5">
         <HeaderTemplate>
             <h2 class="card-title">@localizer.GetString("project1.heading")</h2>
         </HeaderTemplate>
         <BodyTemplate>
-            <HxCardTitle CssClass="text-center">
-                <h1 class="my-5">@Counter</h1>
+            <HxCardTitle dir="ltr" CssClass="text-center my-5" style="font-size:2em;font-weight:bold;">
+                @(Counter>=0?Counter:" - " + Math.Abs(Counter))
             </HxCardTitle>
             <HxCardText CssClass="text-center">
                 <HxButton Color="ThemeColor.Dark" OnClick="IncrementCounter">+</HxButton>

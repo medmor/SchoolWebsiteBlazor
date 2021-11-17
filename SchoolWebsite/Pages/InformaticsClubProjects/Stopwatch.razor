@@ -7,7 +7,7 @@
             <h2 class="card-title">@localizer["project4.title"]</h2>
         </HeaderTemplate>
         <BodyTemplate>
-            <p class="my-5 text-center" style="font-size: 3em;font-weight:bold;">@TimerDisplay</p>
+            <p class="my-5 text-center" style="font-size: 3em;font-weight:bold;direction:ltr !important;">@TimerDisplay</p>
             <div class="text-center my-2">
                 <HxButton Color="ThemeColor.Dark" OnClick="StartTimer">@localizer["project4.button.start"]</HxButton>
                 <HxButton Color="ThemeColor.Dark" OnClick="StopTimer">@localizer["project4.button.stop"]</HxButton>
@@ -20,14 +20,14 @@
 
 @code {
     int ms = 0;
-    Timer? StateTimer = null;
+    Timer? WatchTimer = null;
     string TimerDisplay = "00 : 00 : 00";
 
     void StartTimer()
     {
-        if (StateTimer == null)
+        if (WatchTimer == null)
         {
-            StateTimer = new Timer(
+            WatchTimer = new Timer(
                 (Object stateInfo) =>
                 {
                     ms++;
@@ -42,10 +42,10 @@
 
     void StopTimer()
     {
-        if (StateTimer != null)
+        if (WatchTimer != null)
         {
-            StateTimer.Dispose();
-            StateTimer = null;
+            WatchTimer.Dispose();
+            WatchTimer = null;
         }
 
     }
@@ -54,7 +54,7 @@
     {
         StopTimer();
         ms = 0;
-        TimerDisplay = GetDisplayTimer(this.ms);
+        TimerDisplay = GetDisplayTimer(ms);
         StateHasChanged();
     }
 

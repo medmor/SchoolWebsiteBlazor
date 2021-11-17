@@ -1,79 +1,93 @@
 ﻿@page "/informaticsClub/calculator"
+@using System.Globalization
+@inject IStringLocalizer<Resources.InformaticsClub.Lang> localizer
+
 
 <div class="container">
-    <h1>Basic Calculator Demo Using Blazor</h1>
-    <hr />
-    <div>
-        <div class="row">
-            <div class="col-md-3">
-                <p>First Number</p>
+    <HxCard CssClass="shadow mt-5">
+        <HeaderTemplate>
+            <h2>@localizer["project5.heading"]</h2>
+        </HeaderTemplate>
+        <BodyTemplate>
+            <div dir="ltr">
+                <div class="text-center row">
+                    <div class="col-sm-4 my-2">
+                        <input class="form-control text-center" type="number" placeholder="@localizer["project5.input1"]" @bind="@Num1" />
+                    </div>
+                    <div class="col-sm-1 my-2">
+                        <strong>
+                            @Operator
+                        </strong>
+                    </div>
+                    <div class="col-sm-4 my-2">
+                        <input class="form-control text-center" type="number" placeholder="@localizer["project5.input2"]" @bind="@Num2" />
+                    </div>
+                    <div class="col-sm-3 my-2">
+                        <input readonly class="form-control text-center" placeholder="@localizer["project5.result"]" @bind="@Finalresult" />
+                    </div>
+                </div>
+                <div class="text-center my-3">
+                    <HxButtonGroup>
+                        <HxButton CssClass="px-sm-5" Text="+" OnClick="AddNumbers" Color="ThemeColor.Primary" />
+                        <HxButton CssClass="px-sm-5" Text="-" OnClick="SubtractNumbers" Color="ThemeColor.Secondary" />
+                        <HxButton CssClass="px-sm-5" Text="x" OnClick="MultiplyNumbers" Color="ThemeColor.Info" />
+                        <HxButton CssClass="px-sm-5" Text="/" OnClick="DivideNumbers" Color="ThemeColor.Warning" />
+                    </HxButtonGroup>
+                </div>
             </div>
-            <div class="col-md-4">
-                <input placeholder="Enter First Number" @bind="@num1" />
-            </div>
-        </div>
-        <br />
-        <div class="row">
-            <div class="col-md-3">
-                <p>Second Number</p>
-            </div>
-            <div class="col-md-4">
-                <input placeholder="Enter Second Number" @bind="@num2" />
-            </div>
-        </div>
-        <br />
-        <div class="row">
-            <div class="col-md-3">
-                <p>Result</p>
-            </div>
-            <div class="col-md-4">
-                <input readonly @bind="@finalresult" />
-            </div>
-        </div>
 
-        <br />
-        <div class="row">
-            <div class="col-md-2">
-                <button @onclick="AddNumbers" class="btn btn-light">Add (+)</button>
-            </div>
-            <div class="col-md-2">
-                <button @onclick="SubtractNumbers" class="btn btn-primary">Subtract (−)</button>
-            </div>
-            <div class="col-md-2">
-                <button @onclick="MultiplyNumbers" class="btn btn-success ">Multiply (X)</button>
-            </div>
-            <div class="col-md-2">
-                <button @onclick="DivideNumbers" class="btn btn-info">Divide (/)</button>
-            </div>
-        </div>
-    </div>
+
+
+        </BodyTemplate>
+    </HxCard>
 </div>
 
 @code {
-    string num1;
-    string num2;
-    string finalresult;
+    string Num1;
+    string Num2;
+    string Finalresult;
+    string Operator = "";
+    NumberFormatInfo format = new NumberFormatInfo();
+
+    protected override void OnInitialized()
+    {
+        format.NegativeSign = "-";
+        format.NumberDecimalSeparator = ".";
+
+    }
     void AddNumbers()
     {
-        finalresult = (Convert.ToDouble(num1) + Convert.ToDouble(num2)).ToString();
+        Finalresult = FormatResultForNegativeDisplay(Convert.ToDouble(Num1, format) + Convert.ToDouble(Num2, format));
+        Operator = "+";
     }
     void SubtractNumbers()
     {
-        finalresult = (Convert.ToDouble(num1) - Convert.ToDouble(num2)).ToString();
+        Finalresult = FormatResultForNegativeDisplay(Convert.ToDouble(Num1, format) - Convert.ToDouble(Num2, format));
+        Operator = "-";
     }
     void MultiplyNumbers()
     {
-        finalresult = (Convert.ToDouble(num1) * Convert.ToDouble(num2)).ToString();
+        Finalresult = FormatResultForNegativeDisplay(Convert.ToDouble(Num1, format) * Convert.ToDouble(Num2, format));
+        Operator = "x";
     }
     void DivideNumbers()
     {
-        if (Convert.ToDouble(num2) != 0)
+        Operator = "/";
+        if (Convert.ToDouble(Num2, format) != 0)
         {
-            finalresult = (Convert.ToDouble(num1) / Convert.ToDouble(num2)).ToString();
+            Finalresult = FormatResultForNegativeDisplay(Convert.ToDouble(Num1, format) / Convert.ToDouble(Num2, format));
         }
         else
         {
-            finalresult = "Cannot Divide by Zero";
+            Finalresult = @localizer["project5.zerodivision"];
         }
+    }
+    string FormatResultForNegativeDisplay(double r)
+    {
+        if (r < 0)
+        {
+            return " - " + Math.Abs(r);
+        }
+        return r.ToString();
     }
 }

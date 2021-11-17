@@ -7,6 +7,16 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <None Remove="Pages\InformaticsClubProjects\MatchingGame.razor.css" />
+	  <None Remove="Pages\InformaticsClubProjects\MemoryGame.razor.css" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Content Include="Pages\InformaticsClubProjects\MatchingGame.razor.css" />
+	  <Content Include="Pages\InformaticsClubProjects\MemoryGame.razor.css" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Havit.Blazor.Components.Web.Bootstrap" Version="1.4.12" />
 		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.0" />
 		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.0" PrivateAssets="all" />

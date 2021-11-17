@@ -145,7 +145,7 @@
     <value>/click-counter</value>
   </data>
   <data name="project1.title" xml:space="preserve">
-    <value>Un simple conteur de click</value>
+    <value>Un simple ِcompteur de click</value>
   </data>
   <data name="project2.attempts" xml:space="preserve">
     <value>Nombre de tentatives :</value>
@@ -187,10 +187,10 @@
     <value>Veuillez entrez a!</value>
   </data>
   <data name="project3.result2" xml:space="preserve">
-    <value>"a : ne peut pas être égale à 0!"</value>
+    <value>a : ne peut pas être égale à 0!</value>
   </data>
   <data name="project3.result3" xml:space="preserve">
-    <value>"Veuillez entrez b!"</value>
+    <value>Veuillez entrez b!</value>
   </data>
   <data name="project3.title" xml:space="preserve">
     <value>Résoudre une équation du premier degré</value>
@@ -221,5 +221,77 @@
   </data>
   <data name="project5.path" xml:space="preserve">
     <value>/calculator</value>
+  </data>
+  <data name="project5.heading" xml:space="preserve">
+    <value>Une simple calculatrice</value>
+  </data>
+  <data name="project5.input1" xml:space="preserve">
+    <value>Entrer le premier chiffre</value>
+  </data>
+  <data name="project5.input2" xml:space="preserve">
+    <value>Entrer le deuxième chiffre</value>
+  </data>
+  <data name="project5.result" xml:space="preserve">
+    <value>Résultat</value>
+  </data>
+  <data name="project5.zerodivision" xml:space="preserve">
+    <value>Impossible de diviser par zéro</value>
+  </data>
+  <data name="project6.title" xml:space="preserve">
+    <value>Jeu de correspondance</value>
+  </data>
+  <data name="project6.path" xml:space="preserve">
+    <value>/matching-game</value>
+  </data>
+  <data name="project6.heading" xml:space="preserve">
+    <value>Jeu de correspondance</value>
+  </data>
+  <data name="project6.errors" xml:space="preserve">
+    <value>Erreurs :</value>
+  </data>
+  <data name="project6.button.start" xml:space="preserve">
+    <value>Commencer</value>
+  </data>
+  <data name="project6.button.restart" xml:space="preserve">
+    <value>Recommencer</value>
+  </data>
+  <data name="project6.button.stop" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="project7.title" xml:space="preserve">
+    <value>Jeu de mémoire</value>
+  </data>
+  <data name="project7.path" xml:space="preserve">
+    <value>/memory-game</value>
+  </data>
+  <data name="project7.heading" xml:space="preserve">
+    <value>Un simple jeux de mémoire</value>
+  </data>
+  <data name="project7.msg1" xml:space="preserve">
+    <value>Cliquez sur les couleurs dans le bon ordre</value>
+  </data>
+  <data name="project7.msg2" xml:space="preserve">
+    <value>Rappelez-vous la séquence</value>
+  </data>
+  <data name="project8.path" xml:space="preserve">
+    <value>/tic-tac-toe</value>
+  </data>
+  <data name="project8.title" xml:space="preserve">
+    <value>Jeu de Tic Tac Toe</value>
+  </data>
+  <data name="project8.heading" xml:space="preserve">
+    <value>Jeux de Tic Tac Toe</value>
+  </data>
+  <data name="project8.button.restart" xml:space="preserve">
+    <value>Recommencer</value>
+  </data>
+  <data name="project8.end.win" xml:space="preserve">
+    <value>Bien jouer! Nous avez gagné.</value>
+  </data>
+  <data name="project8.end.lose" xml:space="preserve">
+    <value>Dommage, vous avez perdu.</value>
+  </data>
+  <data name="project8.end.draw" xml:space="preserve">
+    <value>Le match est nul</value>
   </data>
 </root>

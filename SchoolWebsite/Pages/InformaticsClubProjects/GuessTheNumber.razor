@@ -2,7 +2,7 @@
 @inject IStringLocalizer<Resources.InformaticsClub.Lang> localizer
 
 <div class="container p-3">
-    <HxCard class="card shadow mt-5">
+    <HxCard CssClass="shadow mt-5">
         <HeaderTemplate>
             <h2>@localizer.GetString("project2.heading")</h2>
         </HeaderTemplate>
@@ -16,11 +16,7 @@
                 <HxButton disabled="@(String.IsNullOrEmpty(GuessedNumber)&&Playing)" CssClass="my-3" Text="@ButtonText"
                           Color="ThemeColor.Dark" OnClick="@(()=>{CheckTheNumber();})" />
             </div>
-
-            @if (Playing)
-            {
-                <p>@localizer.GetString("project2.attempts") @AttemptsNumber</p>
-            }
+            <p>@localizer.GetString("project2.attempts") @AttemptsNumber</p>
             <p>@Result</p>
         </BodyTemplate>
     </HxCard>

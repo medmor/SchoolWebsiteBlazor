@@ -118,9 +118,153 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="firstCard.text" xml:space="preserve">
-    <value>C’est un club pédagogique créé dans le but d’apprendre aux élèves les bases de la programmation informatique.</value>
+    <value>هو نادي تعليمي تم إنشاؤه بهدف تعليم التلاميذ أساسيات برمجة الكمبيوتر.</value>
   </data>
   <data name="firstCard.title" xml:space="preserve">
     <value>Qu’est-ce que le club informatique ?</value>
+  </data>
+  <data name="project1.button" xml:space="preserve">
+    <value>إعادة إلى 0</value>
+  </data>
+  <data name="project1.heading" xml:space="preserve">
+    <value>انقر فوق الزر لرفع أو خفض قيمة العداد</value>
+  </data>
+  <data name="project1.title" xml:space="preserve">
+    <value>عداد بسيط للنقرات</value>
+  </data>
+  <data name="project2.attempts" xml:space="preserve">
+    <value>عدد المحاولات :</value>
+  </data>
+  <data name="project2.button1" xml:space="preserve">
+    <value>تحقق</value>
+  </data>
+  <data name="project2.button2" xml:space="preserve">
+    <value>العب من جديد</value>
+  </data>
+  <data name="project2.heading" xml:space="preserve">
+    <value>خمن رقم محصور بين 0 و10</value>
+  </data>
+  <data name="project2.input" xml:space="preserve">
+    <value>ادخل الرقم هنا</value>
+  </data>
+  <data name="project2.result1" xml:space="preserve">
+    <value>للأسف! حاول مرة أخرى</value>
+  </data>
+  <data name="project2.result2" xml:space="preserve">
+    <value>أحسنت العدد هو : </value>
+  </data>
+  <data name="project2.title" xml:space="preserve">
+    <value>خمن الرقم</value>
+  </data>
+  <data name="project3.button" xml:space="preserve">
+    <value>حل</value>
+  </data>
+  <data name="project3.heading" xml:space="preserve">
+    <value>برنامج بسيط لحل معادلة من الدرجة الأولى</value>
+  </data>
+  <data name="project3.result1" xml:space="preserve">
+    <value>المرجو ادخال a!</value>
+  </data>
+  <data name="project3.result2" xml:space="preserve">
+    <value>a : لا يمكن أن يكون مساويا ل 0!</value>
+  </data>
+  <data name="project3.result3" xml:space="preserve">
+    <value>المرجو ادخال b!</value>
+  </data>
+  <data name="project3.title" xml:space="preserve">
+    <value>حل معادلة من الدرجة الأولى</value>
+  </data>
+  <data name="project4.button.reset" xml:space="preserve">
+    <value>إعادة ل 0</value>
+  </data>
+  <data name="project4.button.start" xml:space="preserve">
+    <value>انطلاق</value>
+  </data>
+  <data name="project4.button.stop" xml:space="preserve">
+    <value>قف</value>
+  </data>
+  <data name="project4.title" xml:space="preserve">
+    <value>ساعة التوقيف</value>
+  </data>
+  <data name="project5.heading" xml:space="preserve">
+    <value>حاسبة بسيطة</value>
+  </data>
+  <data name="project5.input1" xml:space="preserve">
+    <value>ادخل الرقم الأول</value>
+  </data>
+  <data name="project5.input2" xml:space="preserve">
+    <value>ادخل الرقم الثاني</value>
+  </data>
+  <data name="project5.result" xml:space="preserve">
+    <value>النتيجة</value>
+  </data>
+  <data name="project5.title" xml:space="preserve">
+    <value>الة حاسبة</value>
+  </data>
+  <data name="project6.button.restart" xml:space="preserve">
+    <value>اعادة</value>
+  </data>
+  <data name="project6.button.start" xml:space="preserve">
+    <value>بدأ</value>
+  </data>
+  <data name="project6.button.stop" xml:space="preserve">
+    <value>قف</value>
+  </data>
+  <data name="project6.errors" xml:space="preserve">
+    <value>الأخطاء</value>
+  </data>
+  <data name="project6.heading" xml:space="preserve">
+    <value>لعبة التوصيل</value>
+  </data>
+  <data name="project6.title" xml:space="preserve">
+    <value>لعبة التوصيل</value>
+  </data>
+  <data name="project7.heading" xml:space="preserve">
+    <value>لعبة ذاكرة بسيطة</value>
+  </data>
+  <data name="project7.msg1" xml:space="preserve">
+    <value>انقر على الألوان حسب الترتيب الصحيح</value>
+  </data>
+  <data name="project7.msg2" xml:space="preserve">
+    <value>تذكر ترتيب الألوان</value>
+  </data>
+  <data name="project7.title" xml:space="preserve">
+    <value>لعبة ذاكرة</value>
+  </data>
+  <data name="project8.button.restart" xml:space="preserve">
+    <value>إعادة اللعب</value>
+  </data>
+  <data name="project8.end.draw" xml:space="preserve">
+    <value>تعادل</value>
+  </data>
+  <data name="project8.end.lose" xml:space="preserve">
+    <value>للأسف، خسرت</value>
+  </data>
+  <data name="project8.end.win" xml:space="preserve">
+    <value>أحسنت، ربحت</value>
+  </data>
+  <data name="project8.heading" xml:space="preserve">
+    <value>لعبة تيك تاك تو</value>
+  </data>
+  <data name="project8.title" xml:space="preserve">
+    <value>لعبة تيك تاك تو</value>
+  </data>
+  <data name="projects.button.show" xml:space="preserve">
+    <value>انظر</value>
+  </data>
+  <data name="projectsTitle" xml:space="preserve">
+    <value>أمثلة لبرامج سيتم إنجازها خلال الحصص</value>
+  </data>
+  <data name="card1.text" xml:space="preserve">
+    <value>سيتعلم الطلاب برمجة الويب (html و css و javascript) من خلال إنشاء موقع ويب بسيط للمدرسة الثانوية ومشاريع بسيطة وألعاب صغيرة.</value>
+  </data>
+  <data name="card1.title" xml:space="preserve">
+    <value>ما الذي سيتعلمه التلاميذ؟</value>
+  </data>
+  <data name="card2.text" xml:space="preserve">
+    <value>جميع التلاميذ الذين يرغبون في تعلم البرمجة! نبدأ بالأساسيات المطلقة ، وبعد ذلك يمكن للتلاميذ الانتقال إلى إنشاء مشاريع أكثر تقدمًا.</value>
+  </data>
+  <data name="card2.title" xml:space="preserve">
+    <value>لمن هذا النادي؟</value>
   </data>
 </root>

@@ -1,0 +1,49 @@
+﻿@page "/informaticsClub/memory-game"
+@inject IStringLocalizer<Resources.InformaticsClub.Lang> localizer
+@inject ILogger<string> logger
+
+<div class="container">
+    <HxCard CssClass="mt-3 shadow">
+        <HeaderTemplate>
+            <h2 class="card-title">@localizer["project7.heading"]</h2>
+            @if (!String.IsNullOrWhiteSpace(msg))
+            {
+                <p>@msg</p>
+            }
+        </HeaderTemplate>
+        <BodyTemplate>
+            <div>
+                @if (gameState == GameStates.Running)
+                {
+                    <div class="game-container">
+                        <div class="grid bg-white @(choosingColor?"cursor-none":"")">
+                            @foreach (var color in (Colors[])Enum.GetValues(typeof(Colors)))
+                            {
+                                <div class="cell inactive @(activeState(color)?"active":"") @(hoverState(color)?"hover":"") @(choosingColor?"cursor-none":"")"
+                             style="@(model.GetColorStyle(color))"
+                             onmousedown="@(()=>onMouseDown(color))"
+                             onmouseup="@(()=>onMouseUp(color))"
+                             @onmouseleave="(()=>onMouseLeave(color))"
+                             @onmouseenter="(()=>onMouseEnter(color))">
+                                </div>
+                            }
+                        </div>
+                    </div>
+
+                }
+                @if (gameState != GameStates.Running)
+                {
+                    <div class="text-center my-5">
+                        @if (gameState == GameStates.GameOver)
+                        {
+                            <h1>Game Over; Votre score est : @(sequence.Count - 1)</h1>
+                        }
+                        <HxButton Color="ThemeColor.Dark" Text="@(gameState==GameStates.Intro?"Commencer":"Recommencer")"
+                              OnClick="@restart"></HxButton>
+                    </div>
+                }
+            </div>
+        </BodyTemplate>
+    </HxCard>
+</div>
+

@@ -142,7 +142,7 @@ namespace SchoolWebsite.Resources.InformaticsClub {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Un simple conteur de click.
+        ///   Looks up a localized string similar to Un simple ِcompteur de click.
         /// </summary>
         public static string project1_title {
             get {
@@ -268,7 +268,7 @@ namespace SchoolWebsite.Resources.InformaticsClub {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &quot;a : ne peut pas être égale à 0!&quot;.
+        ///   Looks up a localized string similar to a : ne peut pas être égale à 0!.
         /// </summary>
         public static string project3_result2 {
             get {
@@ -277,7 +277,7 @@ namespace SchoolWebsite.Resources.InformaticsClub {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &quot;Veuillez entrez b!&quot;.
+        ///   Looks up a localized string similar to Veuillez entrez b!.
         /// </summary>
         public static string project3_result3 {
             get {
@@ -340,6 +340,33 @@ namespace SchoolWebsite.Resources.InformaticsClub {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Une simple calculatrice.
+        /// </summary>
+        public static string project5_heading {
+            get {
+                return ResourceManager.GetString("project5.heading", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Entrer le premier chiffre.
+        /// </summary>
+        public static string project5_input1 {
+            get {
+                return ResourceManager.GetString("project5.input1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Entrer le deuxième chiffre.
+        /// </summary>
+        public static string project5_input2 {
+            get {
+                return ResourceManager.GetString("project5.input2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to /calculator.
         /// </summary>
         public static string project5_path {
@@ -349,11 +376,200 @@ namespace SchoolWebsite.Resources.InformaticsClub {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Résultat.
+        /// </summary>
+        public static string project5_result {
+            get {
+                return ResourceManager.GetString("project5.result", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Calculatrice.
         /// </summary>
         public static string project5_title {
             get {
                 return ResourceManager.GetString("project5.title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Impossible de diviser par zéro.
+        /// </summary>
+        public static string project5_zerodivision {
+            get {
+                return ResourceManager.GetString("project5.zerodivision", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Recommencer.
+        /// </summary>
+        public static string project6_button_restart {
+            get {
+                return ResourceManager.GetString("project6.button.restart", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Commencer.
+        /// </summary>
+        public static string project6_button_start {
+            get {
+                return ResourceManager.GetString("project6.button.start", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Stop.
+        /// </summary>
+        public static string project6_button_stop {
+            get {
+                return ResourceManager.GetString("project6.button.stop", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Erreurs :.
+        /// </summary>
+        public static string project6_errors {
+            get {
+                return ResourceManager.GetString("project6.errors", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Jeu de correspondance.
+        /// </summary>
+        public static string project6_heading {
+            get {
+                return ResourceManager.GetString("project6.heading", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to /matching-game.
+        /// </summary>
+        public static string project6_path {
+            get {
+                return ResourceManager.GetString("project6.path", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Jeu de correspondance.
+        /// </summary>
+        public static string project6_title {
+            get {
+                return ResourceManager.GetString("project6.title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Un simple jeux de mémoire.
+        /// </summary>
+        public static string project7_heading {
+            get {
+                return ResourceManager.GetString("project7.heading", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cliquez sur les couleurs dans le bon ordre.
+        /// </summary>
+        public static string project7_msg1 {
+            get {
+                return ResourceManager.GetString("project7.msg1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rappelez-vous la séquence.
+        /// </summary>
+        public static string project7_msg2 {
+            get {
+                return ResourceManager.GetString("project7.msg2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to /memory-game.
+        /// </summary>
+        public static string project7_path {
+            get {
+                return ResourceManager.GetString("project7.path", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Jeu de mémoire.
+        /// </summary>
+        public static string project7_title {
+            get {
+                return ResourceManager.GetString("project7.title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Recommencer.
+        /// </summary>
+        public static string project8_button_restart {
+            get {
+                return ResourceManager.GetString("project8.button.restart", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Le match est nul.
+        /// </summary>
+        public static string project8_end_draw {
+            get {
+                return ResourceManager.GetString("project8.end.draw", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dommage, vous avez perdu..
+        /// </summary>
+        public static string project8_end_lose {
+            get {
+                return ResourceManager.GetString("project8.end.lose", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bien jouer! Nous avez gagné..
+        /// </summary>
+        public static string project8_end_win {
+            get {
+                return ResourceManager.GetString("project8.end.win", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Jeux de Tic Tac Toe.
+        /// </summary>
+        public static string project8_heading {
+            get {
+                return ResourceManager.GetString("project8.heading", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to /tic-tac-toe.
+        /// </summary>
+        public static string project8_path {
+            get {
+                return ResourceManager.GetString("project8.path", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Jeu de Tic Tac Toe.
+        /// </summary>
+        public static string project8_title {
+            get {
+                return ResourceManager.GetString("project8.title", resourceCulture);
             }
         }
         
