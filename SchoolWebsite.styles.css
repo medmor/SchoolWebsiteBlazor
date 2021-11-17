@@ -1,2 +1,137 @@
 @import '_content/Havit.Blazor.Components.Web.Bootstrap/Havit.Blazor.Components.Web.Bootstrap.bundle.scp.css';
 
+/* /Pages/InformaticsClubProjects/MatchingGame.razor.rz.scp.css */
+.card-game[b-0qjt2n62kz] {
+    max-width: 600px;
+}
+
+.game-container[b-0qjt2n62kz] {
+    position: relative;
+    width: 91%;
+    padding-top: 95%;
+    margin: auto;
+}
+
+.grid[b-0qjt2n62kz] {
+    width: 100%;
+    height: 95%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    column-gap: 2px;
+    row-gap: 2px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
+.cell[b-0qjt2n62kz] {
+    position: relative;
+    background-color: gainsboro;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.btn-inactive[b-0qjt2n62kz] {
+    opacity: 0.5 !important;
+}
+
+.btn-active[b-0qjt2n62kz] {
+    opacity: 1;
+}
+
+.mask[b-0qjt2n62kz] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+/* /Pages/InformaticsClubProjects/MemoryGame.razor.rz.scp.css */
+.container[b-2qlu0rxgwy] {
+    max-width: 600px;
+    margin: auto;
+}
+
+.game-container[b-2qlu0rxgwy] {
+    position: relative;
+    width: 91%;
+    padding-top: 95%;
+    margin: auto;
+}
+
+.grid[b-2qlu0rxgwy] {
+    padding: 1%;
+    width: 100%;
+    height: 95%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 49% 49%;
+    grid-template-rows: 49% 49%;
+    column-gap: 2%;
+    row-gap: 2%;
+}
+
+.cell[b-2qlu0rxgwy] {
+    user-select: none;
+    cursor: pointer;
+}
+
+.inactive[b-2qlu0rxgwy] {
+    opacity: 0.4;
+}
+
+.hover[b-2qlu0rxgwy] {
+    opacity: 0.7;
+}
+
+.active[b-2qlu0rxgwy] {
+    opacity: 1;
+}
+
+.cursor-none[b-2qlu0rxgwy] {
+    cursor: none !important;
+}
+/* /Pages/InformaticsClubProjects/TicTacToe.razor.rz.scp.css */
+.container[b-qkhnq1wkca] {
+    max-width: 600px;
+    margin: auto;
+}
+
+.game-container[b-qkhnq1wkca] {
+    position: relative;
+    width: 91%;
+    padding-top: 95%;
+    margin: auto;
+}
+
+.grid[b-qkhnq1wkca] {
+    width: 100%;
+    height: 95%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    column-gap: 2px;
+    row-gap: 2px;
+}
+
+.cell[b-qkhnq1wkca] {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+}
