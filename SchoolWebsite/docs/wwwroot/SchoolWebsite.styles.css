@@ -43,12 +43,6 @@ main[b-15shfk2xz9] {
     top: 20px;
 }
 
-    main .card[b-15shfk2xz9] {
-        overflow: hidden;
-    }
-
-
-
 @media (max-width: 720px) {
     #intro-example[b-15shfk2xz9] {
         height: 500px;
@@ -57,17 +51,15 @@ main[b-15shfk2xz9] {
     main[b-15shfk2xz9] {
         top: 50px;
     }
-
-        main .card[b-15shfk2xz9] {
-            overflow: scroll;
-        }
-
-    iframe[b-15shfk2xz9] {
-        overflow: scroll;
-    }
 }
 
 iframe[b-15shfk2xz9] {
     margin: auto;
     width: 100%;
+    text-align: center;
+}
+
+.card[b-15shfk2xz9] {
+    max-width: 500px;
+    margin: auto;
 }
