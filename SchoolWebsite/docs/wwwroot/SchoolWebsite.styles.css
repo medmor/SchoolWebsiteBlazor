@@ -44,8 +44,12 @@ main[b-15shfk2xz9] {
 }
 
 @media (max-width: 720px) {
-    #intro-example[b-15shfk2xz9] {
+    #cover-image-container[b-15shfk2xz9] {
         height: 500px;
+    }
+
+    header[b-15shfk2xz9] {
+        height: 250px;
     }
 
     main[b-15shfk2xz9] {
