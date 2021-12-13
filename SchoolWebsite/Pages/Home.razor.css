@@ -38,12 +38,6 @@ main {
     top: 20px;
 }
 
-    main .card {
-        overflow: hidden;
-    }
-
-
-
 @media (max-width: 720px) {
     #intro-example {
         height: 500px;
@@ -52,17 +46,15 @@ main {
     main {
         top: 50px;
     }
-
-        main .card {
-            overflow: scroll;
-        }
-
-    iframe {
-        overflow: scroll;
-    }
 }
 
 iframe {
     margin: auto;
     width: 100%;
+    text-align: center;
+}
+
+.card {
+    max-width: 500px;
+    margin: auto;
 }
