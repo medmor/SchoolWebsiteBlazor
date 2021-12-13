@@ -22,6 +22,9 @@
             get: () => localStorage['BlazorCulture'],
             set: (value) => localStorage['BlazorCulture'] = value
         };
+        window.collapseNavbar = (navbar) => {
+            navbar.classList.remove("show");
+        }
     </script>
 
     <!-- Standard Bootstrap CSS from CDN -->

@@ -28,8 +28,8 @@
       "Microsoft.JSInterop.dll": "sha256-1HmhQjtkNER1s7c5hmtiQC\/mZHwLjUjCO8X2KiLIXy0=",
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-vnE\/f0iqOlVKaRjTpLiArMb+lw6INqH0HhqcMh9FPe0=",
       "netstandard.dll": "sha256-j9vfTNQidkLz1le8CuX8m0X8kstbOruCEN9Se+eqrXQ=",
-      "SchoolWebsite.dll": "sha256-YPhRExrZnrdKZceQ7NlD2hIrEiypwD6z0lq4Vs0fqw4=",
-      "SharedProject.dll": "sha256-e20IxiTrZ5rl4RWLgDqOCdI0\/XQZnA82pQXz9YCRA\/4=",
+      "SchoolWebsite.dll": "sha256-L1g6P7u44rARn1h+4P98AdGbT8dRD1\/JusDqG6dJ6Q4=",
+      "SharedProject.dll": "sha256-HrFXk2p1TiSJK3eHE8bj3F5yxWxz2tykHO0s3jf0D+I=",
       "System.Collections.Concurrent.dll": "sha256-E3zKyPRbOlK0zr1I9Eeg+1bvLoCMbW9olWbeRwWJ7uM=",
       "System.Collections.dll": "sha256-PGM66mleCks9nEGNKGUrbk1WS74eQ1i35dPRdYHeFX4=",
       "System.Collections.NonGeneric.dll": "sha256-QVV5v6Y3KEb6dTAKJUhZ4qTULK85gH5eeHkHwZTlv6U=",
@@ -66,7 +66,7 @@
     },
     "extensions": null,
     "lazyAssembly": {
-      "InformaticsClubProjects.dll": "sha256-E0511iZ1yGAiDr7CXA8p71M4gR1GLZbK6sEfAwLtHC8="
+      "InformaticsClubProjects.dll": "sha256-Kwhvv72w1gNu2oll1XPGIhs8BZn6iDv5\/2QUa6anAxI="
     },
     "libraryInitializers": null,
     "pdb": null,
@@ -81,7 +81,7 @@
     },
     "satelliteResources": {
       "ar": {
-        "ar\/SharedProject.resources.dll": "sha256-7jIEU9BixHhwltvJINu\/zw4ggQcjyOmRLH0bEuJw8lY="
+        "ar\/SharedProject.resources.dll": "sha256-vUPBYW8bDbxgUSeLatjFnejzobBlSdtGm1lQmqeSRGc="
       },
       "cs": {
         "cs\/Havit.Blazor.Components.Web.Bootstrap.resources.dll": "sha256-2bE1Pf8Wl9sYLREfmJ3bPXtGPzYHUXihWMaAKWGlC6k="
