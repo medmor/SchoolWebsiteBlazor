@@ -1,0 +1,74 @@
+﻿@page "/informaticsClub/guess-the-number"
+@inject IStringLocalizer<SharedProject.Resources.InformaticsClub.Lang> localizer
+
+<div class="container p-3">
+    <div class="card shadow mt-5">
+        <div class="card-header">
+            <h2>@localizer.GetString("project2.heading")</h2>
+        </div>
+        <div class="card-body">
+            @if (Playing)
+            {
+                <input class="form-control my-3" @bind="GuessedNumber" @bind:event="oninput"
+                   placeholder="@localizer.GetString("project2.input")" type="number" min="0" max="10" />
+            }
+            <div class="d-flex justify-content-end">
+                <button disabled="@(String.IsNullOrEmpty(GuessedNumber)&&Playing)" class="btn btn-dark my-3"
+                        @onclick="@(()=>{CheckTheNumber();})">
+                    @ButtonText
+                </button>
+            </div>
+            <p>@localizer.GetString("project2.attempts") @AttemptsNumber</p>
+            <p>@Result</p>
+        </div>
+    </div>
+</div>
+
+
+@code {
+    bool Playing = false;
+    int NumberToGuess = 0;
+    string? GuessedNumber = null;
+    string Result = "";
+    int AttemptsNumber = 0;
+
+    protected override void OnInitialized()
+    {
+        GenerateRandomNumber();
+    }
+
+    void CheckTheNumber()
+    {
+        if (Playing)
+        {
+            AttemptsNumber++;
+            if (NumberToGuess.ToString() == GuessedNumber)
+            {
+                Result = localizer.GetString("project2.result2") + GuessedNumber;
+                Playing = false;
+                GuessedNumber = null;
+            }
+            else
+            {
+                Result = localizer.GetString("project2.result1");
+            }
+        }
+        else
+        {
+            GenerateRandomNumber();
+        }
+    }
+
+    void GenerateRandomNumber()
+    {
+        if (!Playing)
+        {
+            AttemptsNumber = 0;
+            Result = "";
+            var rnd = new Random();
+            NumberToGuess = rnd.Next(0, 10);
+            Playing = true;
+        }
+    }
+    string ButtonText => Playing ? localizer.GetString("project2.button1") : localizer.GetString("project2.button2");
+}

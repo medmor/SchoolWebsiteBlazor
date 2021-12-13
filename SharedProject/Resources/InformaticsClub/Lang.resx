@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="card1.text" xml:space="preserve">
+    <value>Les élèves apprendront la programmation web (html, css, javascript) à travers la création d’un simple site web du lycée, des simples projets, et des petits jeux.</value>
+  </data>
+  <data name="card1.title" xml:space="preserve">
+    <value>Qu’apprendront les élèves ?</value>
+  </data>
+  <data name="card2.text" xml:space="preserve">
+    <value>Tous les élèves qui veulent apprendre à programmer ! Nous commençons par les bases absolues, et après, les élèves peuvent passer a la création de projets plus avancés.</value>
+  </data>
+  <data name="card2.title" xml:space="preserve">
+    <value>À qui s’adresse ce club ?</value>
+  </data>
+  <data name="firstCard.text" xml:space="preserve">
+    <value>C’est un club pédagogique créé dans le but d’apprendre aux élèves les bases de la programmation informatique.</value>
+  </data>
+  <data name="firstCard.title" xml:space="preserve">
+    <value>Qu’est-ce que le club informatique ?</value>
+  </data>
+  <data name="project1.button" xml:space="preserve">
+    <value>Remettre à 0</value>
+  </data>
+  <data name="project1.heading" xml:space="preserve">
+    <value>Clickez sur un button pour augmenter ou diminuer le conteur</value>
+  </data>
+  <data name="project1.path" xml:space="preserve">
+    <value>/click-counter</value>
+  </data>
+  <data name="project1.title" xml:space="preserve">
+    <value>Un simple ِcompteur de click</value>
+  </data>
+  <data name="project2.attempts" xml:space="preserve">
+    <value>Nombre de tentatives :</value>
+  </data>
+  <data name="project2.button1" xml:space="preserve">
+    <value>Vérifier</value>
+  </data>
+  <data name="project2.button2" xml:space="preserve">
+    <value>Rejouer</value>
+  </data>
+  <data name="project2.heading" xml:space="preserve">
+    <value>Devinez un nombre entre 0 et 10</value>
+  </data>
+  <data name="project2.input" xml:space="preserve">
+    <value>Entrer un nombre ici</value>
+  </data>
+  <data name="project2.path" xml:space="preserve">
+    <value>/guess-the-number</value>
+  </data>
+  <data name="project2.result1" xml:space="preserve">
+    <value>Dommage! Essayez une autre fois</value>
+  </data>
+  <data name="project2.result2" xml:space="preserve">
+    <value>Bien jouer le nombre est :</value>
+  </data>
+  <data name="project2.title" xml:space="preserve">
+    <value>Deviner le nombre</value>
+  </data>
+  <data name="project3.button" xml:space="preserve">
+    <value>Résoudre</value>
+  </data>
+  <data name="project3.heading" xml:space="preserve">
+    <value>Programme simple pour résoudre une équation du premier degré</value>
+  </data>
+  <data name="project3.path" xml:space="preserve">
+    <value>/equation-solver</value>
+  </data>
+  <data name="project3.result1" xml:space="preserve">
+    <value>Veuillez entrez a!</value>
+  </data>
+  <data name="project3.result2" xml:space="preserve">
+    <value>a : ne peut pas être égale à 0!</value>
+  </data>
+  <data name="project3.result3" xml:space="preserve">
+    <value>Veuillez entrez b!</value>
+  </data>
+  <data name="project3.title" xml:space="preserve">
+    <value>Résoudre une équation du premier degré</value>
+  </data>
+  <data name="project4.button.reset" xml:space="preserve">
+    <value>Réinitialiser</value>
+  </data>
+  <data name="project4.button.start" xml:space="preserve">
+    <value>Démarrer</value>
+  </data>
+  <data name="project4.button.stop" xml:space="preserve">
+    <value>Arrêter</value>
+  </data>
+  <data name="project4.path" xml:space="preserve">
+    <value>/stopwatch</value>
+  </data>
+  <data name="project4.title" xml:space="preserve">
+    <value>Chronomètre</value>
+  </data>
+  <data name="projects.button.show" xml:space="preserve">
+    <value>Voir</value>
+  </data>
+  <data name="projectsTitle" xml:space="preserve">
+    <value>Exemples de projets à réaliser durant les séances</value>
+  </data>
+  <data name="project5.title" xml:space="preserve">
+    <value>Calculatrice</value>
+  </data>
+  <data name="project5.path" xml:space="preserve">
+    <value>/calculator</value>
+  </data>
+  <data name="project5.heading" xml:space="preserve">
+    <value>Une simple calculatrice</value>
+  </data>
+  <data name="project5.input1" xml:space="preserve">
+    <value>Entrer le premier chiffre</value>
+  </data>
+  <data name="project5.input2" xml:space="preserve">
+    <value>Entrer le deuxième chiffre</value>
+  </data>
+  <data name="project5.result" xml:space="preserve">
+    <value>Résultat</value>
+  </data>
+  <data name="project5.zerodivision" xml:space="preserve">
+    <value>Impossible de diviser par zéro</value>
+  </data>
+  <data name="project6.title" xml:space="preserve">
+    <value>Jeu de correspondance</value>
+  </data>
+  <data name="project6.path" xml:space="preserve">
+    <value>/matching-game</value>
+  </data>
+  <data name="project6.heading" xml:space="preserve">
+    <value>Jeu de correspondance</value>
+  </data>
+  <data name="project6.errors" xml:space="preserve">
+    <value>Erreurs :</value>
+  </data>
+  <data name="project6.button.start" xml:space="preserve">
+    <value>Commencer</value>
+  </data>
+  <data name="project6.button.restart" xml:space="preserve">
+    <value>Recommencer</value>
+  </data>
+  <data name="project6.button.stop" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="project7.title" xml:space="preserve">
+    <value>Jeu de mémoire</value>
+  </data>
+  <data name="project7.path" xml:space="preserve">
+    <value>/memory-game</value>
+  </data>
+  <data name="project7.heading" xml:space="preserve">
+    <value>Un simple jeux de mémoire</value>
+  </data>
+  <data name="project7.msg1" xml:space="preserve">
+    <value>Cliquez sur les couleurs dans le bon ordre</value>
+  </data>
+  <data name="project7.msg2" xml:space="preserve">
+    <value>Rappelez-vous la séquence</value>
+  </data>
+  <data name="project8.path" xml:space="preserve">
+    <value>/tic-tac-toe</value>
+  </data>
+  <data name="project8.title" xml:space="preserve">
+    <value>Jeu de Tic Tac Toe</value>
+  </data>
+  <data name="project8.heading" xml:space="preserve">
+    <value>Jeux de Tic Tac Toe</value>
+  </data>
+  <data name="project8.button.restart" xml:space="preserve">
+    <value>Recommencer</value>
+  </data>
+  <data name="project8.end.win" xml:space="preserve">
+    <value>Bien jouer! Nous avez gagné.</value>
+  </data>
+  <data name="project8.end.lose" xml:space="preserve">
+    <value>Dommage, vous avez perdu.</value>
+  </data>
+  <data name="project8.end.draw" xml:space="preserve">
+    <value>Le match est nul</value>
+  </data>
+  <data name="title" xml:space="preserve">
+    <value>Club Informatique</value>
+  </data>
+  <data name="project7.button.start" xml:space="preserve">
+    <value>Commencer</value>
+  </data>
+  <data name="button7.button.restart" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="project7.button.restart" xml:space="preserve">
+    <value>Recommencer</value>
+  </data>
+  <data name="project7.gameover" xml:space="preserve">
+    <value>Game Over; Votre score est :</value>
+  </data>
+</root>

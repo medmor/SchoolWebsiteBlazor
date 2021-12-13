@@ -1,0 +1,40 @@
+﻿@page "/informaticsClub/click-counter"
+@inject IStringLocalizer<SharedProject.Resources.InformaticsClub.Lang> localizer
+
+<div class="container p-3">
+    <div class="card shadow mt-5">
+        <div class="card-header">
+            <h2 class="card-title">@localizer.GetString("project1.heading")</h2>
+        </div>
+        <div class="card-body">
+            <div dir="ltr" class="card-title text-center my-5" style="font-size:2em;font-weight:bold;">
+                @(Counter>=0?Counter:" - " + Math.Abs(Counter))
+            </div>
+            <div class="card-text text-center">
+                <button class="btn btn-dark" @onclick="IncrementCounter">+</button>
+                <button class="btn btn-dark mx-3" @onclick="DecrementCounter">-</button>
+                <button class="btn btn-dark" @onclick="ResetCounter">@localizer.GetString("project1.button")</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    int Counter = 0;
+
+
+    void ResetCounter()
+    {
+        this.Counter = 0;
+    }
+
+    void IncrementCounter()
+    {
+        this.Counter++;
+    }
+
+    void DecrementCounter()
+    {
+        this.Counter--;
+    }
+}

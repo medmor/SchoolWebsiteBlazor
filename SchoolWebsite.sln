@@ -5,6 +5,10 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolWebsite", "SchoolWebsite\SchoolWebsite.csproj", "{D3FB7C08-11D6-4F4F-A6EC-BDAE93DA930E}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InformaticsClubProjects", "InformaticsClubProjects\InformaticsClubProjects.csproj", "{9E49ECBA-C18C-43A1-932A-438642CB6085}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharedProject", "SharedProject\SharedProject.csproj", "{7A9F56B5-97B3-42E9-8581-F75DC47E6707}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,12 +19,20 @@ Global
 		{D3FB7C08-11D6-4F4F-A6EC-BDAE93DA930E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3FB7C08-11D6-4F4F-A6EC-BDAE93DA930E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3FB7C08-11D6-4F4F-A6EC-BDAE93DA930E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E49ECBA-C18C-43A1-932A-438642CB6085}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E49ECBA-C18C-43A1-932A-438642CB6085}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E49ECBA-C18C-43A1-932A-438642CB6085}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E49ECBA-C18C-43A1-932A-438642CB6085}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A9F56B5-97B3-42E9-8581-F75DC47E6707}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A9F56B5-97B3-42E9-8581-F75DC47E6707}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A9F56B5-97B3-42E9-8581-F75DC47E6707}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A9F56B5-97B3-42E9-8581-F75DC47E6707}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {FB4F034A-26E7-45FC-B921-34650B45B357}
 		RESX_NeutralResourcesLanguage = fr-FR
+		SolutionGuid = {FB4F034A-26E7-45FC-B921-34650B45B357}
 	EndGlobalSection
 EndGlobal

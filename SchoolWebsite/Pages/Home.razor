@@ -1,14 +1,41 @@
 ﻿@page "/home"
-@inject IStringLocalizer<Resources.Home.Lang> localizer
+@inject IStringLocalizer<SharedProject.Resources.Home.Lang> localizer
 
 
 <PageTitle>@localizer["title"]</PageTitle>
-
+<div id="cover-image-container"
+     class="p-5 text-center bg-image"
+     style="background-image: url('_content/SharedProject/lycee_cover.jpg');"></div>
 <div class="container">
-    <h1>@localizer["heading"]</h1>
-    <img class="img-fluid" src="images/en-cours-de-preparation.png" />
+    <header class="text-center p-5 text-white">
+        <div id="header-background"></div>
+        <h1>@localizer["heading"]</h1>
+        <h4>@localizer["subheading"]</h4>
+    </header>
+    <main class="row row-cols-1 row-cols-xl-2 g-4 my-3 pb-3">
+        @foreach (var post in posts)
+        {
+            <div class="col">
+                <div class="card overflow-lg-scroll">
+                    <iframe onload="iframScrollCenter(this)" src="@post.link" height="@post.height"></iframe>
+                </div>
+            </div>
+        }
+    </main>
 </div>
 
 @code {
+    public record Post(string link, int height);
+    public Post[] posts = new Post[]{
+            new Post("https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D482846453552758%26id%3D107885867715487&show_text=true&width=500",498),
+            new Post("https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D481817496988987%26id%3D107885867715487&show_text=true&width=500",590),
+            new Post("https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D480423213795082%26id%3D107885867715487&show_text=true&width=500",761),
+            new Post("https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D480463627124374%26id%3D107885867715487&show_text=true&width=500",722),
+            new Post("https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D479379567232780%26id%3D107885867715487&show_text=true&width=500",858),
+     };
+    protected override void OnInitialized()
+    {
+
+    }
 
 }

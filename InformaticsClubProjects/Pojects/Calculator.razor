@@ -1,0 +1,93 @@
+﻿@page "/informaticsClub/calculator"
+@using System.Globalization
+@inject IStringLocalizer<SharedProject.Resources.InformaticsClub.Lang> localizer
+
+
+<div class="container">
+    <div class="card shadow mt-5">
+        <div class="card-header">
+            <h2>@localizer["project5.heading"]</h2>
+        </div>
+        <div class="card-body">
+            <div dir="ltr">
+                <div class="text-center row">
+                    <div class="col-sm-4 my-2">
+                        <input class="form-control text-center" type="number" placeholder="@localizer["project5.input1"]" @bind="@Num1" />
+                    </div>
+                    <div class="col-sm-1 my-2">
+                        <strong>
+                            @Operator
+                        </strong>
+                    </div>
+                    <div class="col-sm-4 my-2">
+                        <input class="form-control text-center" type="number" placeholder="@localizer["project5.input2"]" @bind="@Num2" />
+                    </div>
+                    <div class="col-sm-3 my-2">
+                        <input readonly class="form-control text-center" placeholder="@localizer["project5.result"]" @bind="@Finalresult" />
+                    </div>
+                </div>
+                <div class="text-center my-3">
+                    <div class="btn-group">
+                        <button class="btn btn-primary px-sm-5" @onclick="AddNumbers">+</button>
+                        <button class="btn btn-secondary px-sm-5" @onclick="SubtractNumbers" Color="ThemeColor.Secondary">-</button>
+                        <button class="btn btn-info px-sm-5" @onclick="MultiplyNumbers" Color="ThemeColor.Info">x</button>
+                        <button class="btn btn-warning px-sm-5" @onclick="DivideNumbers" Color="ThemeColor.Warning">/</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+
+@code {
+    string Num1;
+    string Num2;
+    string Finalresult;
+    string Operator = "";
+    NumberFormatInfo format = new NumberFormatInfo();
+
+    protected override void OnInitialized()
+    {
+        format.NegativeSign = "-";
+        format.NumberDecimalSeparator = ".";
+
+    }
+    void AddNumbers()
+    {
+        Finalresult = FormatResultForNegativeDisplay(Convert.ToDouble(Num1, format) + Convert.ToDouble(Num2, format));
+        Operator = "+";
+    }
+    void SubtractNumbers()
+    {
+        Finalresult = FormatResultForNegativeDisplay(Convert.ToDouble(Num1, format) - Convert.ToDouble(Num2, format));
+        Operator = "-";
+    }
+    void MultiplyNumbers()
+    {
+        Finalresult = FormatResultForNegativeDisplay(Convert.ToDouble(Num1, format) * Convert.ToDouble(Num2, format));
+        Operator = "x";
+    }
+    void DivideNumbers()
+    {
+        Operator = "/";
+        if (Convert.ToDouble(Num2, format) != 0)
+        {
+            Finalresult = FormatResultForNegativeDisplay(Convert.ToDouble(Num1, format) / Convert.ToDouble(Num2, format));
+        }
+        else
+        {
+            Finalresult = @localizer["project5.zerodivision"];
+        }
+    }
+    string FormatResultForNegativeDisplay(double r)
+    {
+        if (r < 0)
+        {
+            return " - " + Math.Abs(r);
+        }
+        return r.ToString();
+    }
+}

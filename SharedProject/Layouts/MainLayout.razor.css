@@ -1,0 +1,13 @@
+﻿#intro-example {
+    height: 600px;
+    width: 100%;
+    position: absolute;
+    z-index: -100;
+    background-size: cover;
+}
+
+@media (max-width: 992px) {
+    #intro-example {
+        height: 400px;
+    }
+}

@@ -1,56 +1,58 @@
 ﻿@page "/informaticsClub"
-@inject IStringLocalizer<Resources.InformaticsClub.Lang> localizer
+@inject IStringLocalizer<SharedProject.Resources.InformaticsClub.Lang> localizer
 @inject NavigationManager NavManager
 @inject ILogger<string> logger
 
+<PageTitle>@localizer["title"]</PageTitle>
 
 <div class="container">
-    <HxCard CssClass="shadow border-0 mb-3">
-        <BodyTemplate>
-            <HxCardTitle><h3>@localizer["firstCard.title"]</h3></HxCardTitle>
-            <HxCardText>@localizer["firstCard.text"]</HxCardText>
-        </BodyTemplate>
-    </HxCard>
+    <div class="card shadow border-0 mb-3">
+        <div class="card-body">
+            <div class="card-title"><h3>@localizer["firstCard.title"]</h3></div>
+            <div class="card-text">@localizer["firstCard.text"]</div>
+        </div>
+    </div>
     <div class="row mb-3">
         @for (var i = 1; i < 3; i++)
         {
             var cardTitle = @localizer["card" + i + ".title"];
             var cardText = @localizer["card" + i + ".text"];
             <div class="col-sm-6">
-                <HxCard CssClass="shadow border-0">
-                    <BodyTemplate>
-                        <HxCardTitle><h3>@cardTitle</h3></HxCardTitle>
-                        <HxCardText>@cardText</HxCardText>
-                    </BodyTemplate>
-                </HxCard>
+                <div class="card shadow border-0 mb-2">
+                    <div class="card-body">
+                        <div class="card-title"><h3>@cardTitle</h3></div>
+                        <div class="card-text">@cardText</div>
+                    </div>
+                </div>
             </div>
         }
     </div>
-    <HxCard CssClass="shadow border-0">
-        <BodyTemplate>
-            <HxCardTitle><h3>@localizer["projectsTitle"]</h3></HxCardTitle>
+    <div class="card shadow bg-light mb-2 p-0">
+        <div class="card-body">
+            <div class="card-title"><h3>@localizer["projectsTitle"]</h3></div>
             <div class="row mb-3">
                 @for (var i = 1; i <= NumberOfProjects; i++)
                 {
                     var projectTitle = @localizer["project" + i + ".title"];
                     var projectPath = @localizer["project" + i + ".path"];
                     <div class="col-sm-6">
-                        <HxCard CssClass="shadow border-0 my-3">
-                            <BodyTemplate>
-                                <HxCardTitle><h3>@projectTitle</h3></HxCardTitle>
-                                <HxCardText>@projectTitle</HxCardText>
+                        <div class="card shadow border-0 my-3">
+                            <div class="card-body">
+                                <div class="card-title"><h3>@projectTitle</h3></div>
+                                <div class="card-text">@projectTitle</div>
                                 <div class="d-flex justify-content-end">
-                                    <HxButton Text="@localizer["projects.button.show"]" Color="ThemeColor.Dark"
-                                          OnClick="@(() => GoToProject(projectPath))" />
+                                    <button class="btn btn-dark" @onclick="(() => GoToProject(projectPath))">
+                                        @localizer["projects.button.show"]
+                                    </button>
                                 </div>
-                            </BodyTemplate>
-                        </HxCard>
+                            </div>
+                        </div>
                     </div>
                 }
 
             </div>
-        </BodyTemplate>
-    </HxCard>
+        </div>
+    </div>
 </div>
 
 

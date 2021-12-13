@@ -1,0 +1,62 @@
+﻿@page "/informaticsClub/equation-solver"
+@inject IStringLocalizer<SharedProject.Resources.InformaticsClub.Lang> localizer
+
+<div class="container p-3">
+    <div class="card shadow mt-5">
+        <div class="card-header">
+            <h2 class="card-title">@localizer["project3.heading"]</h2>
+        </div>
+        <div class="card-body">
+            <h1 class="my-5 text-center" dir="ltr">
+                <input class="text-center" type="number" @bind="a" placeholder="a" style="width:20%;">
+                X +
+                <input class="text-center" type="number" @bind="b" placeholder="b" style="width:20%;">
+                = 0
+            </h1>
+            @if (Msg != null)
+            {
+                <h1 class="my-5 text-center">@Msg</h1>
+            }
+            @if (Result != null)
+            {
+                <h1 class="my-5 text-center" dir="ltr">@Result</h1>
+            }
+            <div class="text-center my-2">
+                <button class="btn btn-dark" @onclick="Solve">@localizer["project3.button"]</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    int? a = null;
+    int? b = null;
+    string? Result = null;
+    string? Msg = null;
+
+
+    void Solve()
+    {
+        if (a == null)
+        {
+            Msg = localizer.GetString("project3.result1");
+            return;
+        }
+        if (a == 0)
+        {
+            Msg = localizer.GetString("project3.result2");
+            return;
+        }
+        if (b == null)
+        {
+            Msg = localizer.GetString("project3.result3");
+            return;
+        }
+        var r = (decimal)-b / a;
+        //this is needed for ltr in rlt direction; I dont why???
+        var formatedA = "" + (a >= 0 ? a : " - " + Math.Abs((int)a));
+        var formatedB = "" + (b >= 0 ? b : " - " + Math.Abs((int)b));
+        var formatedR = (r >= 0 ? r?.ToString("N2") : " - " + Math.Abs((decimal)r).ToString("N2"));
+        Result = $"X = - ({formatedB} / {formatedA}) = {formatedR}";
+    }
+}

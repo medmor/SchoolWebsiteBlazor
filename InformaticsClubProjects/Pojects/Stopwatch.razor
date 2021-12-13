@@ -1,0 +1,79 @@
+﻿@page "/informaticsClub/stopwatch"
+@inject IStringLocalizer<SharedProject.Resources.InformaticsClub.Lang> localizer
+
+<div class="container p-3">
+    <div class="card shadow mt-5">
+        <div class="card-header">
+            <h2 class="card-title">@localizer["project4.title"]</h2>
+        </div>
+        <div class="card-body">
+            <p class="my-5 text-center" style="font-size: 3em;font-weight:bold;direction:ltr !important;">@TimerDisplay</p>
+            <div class="text-center my-2">
+                <button class="btn btn-dark" @onclick="StartTimer">@localizer["project4.button.start"]</button>
+                <button class="btn btn-dark" @onclick="StopTimer">@localizer["project4.button.stop"]</button>
+                <button class="btn btn-dark" @onclick="ResetTimer">@localizer["project4.button.reset"]</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@code {
+    int ms = 0;
+    Timer? WatchTimer = null;
+    string TimerDisplay = "00 : 00 : 00";
+
+    void StartTimer()
+    {
+        if (WatchTimer == null)
+        {
+            WatchTimer = new Timer(
+                (Object stateInfo) =>
+                {
+                    ms++;
+                    TimerDisplay = GetDisplayTimer(ms);
+                    StateHasChanged();
+                },
+            null, 0, 10);
+        }
+
+
+    }
+
+    void StopTimer()
+    {
+        if (WatchTimer != null)
+        {
+            WatchTimer.Dispose();
+            WatchTimer = null;
+        }
+
+    }
+
+    void ResetTimer()
+    {
+        StopTimer();
+        ms = 0;
+        TimerDisplay = GetDisplayTimer(ms);
+        StateHasChanged();
+    }
+
+    string GetDisplayTimer(int ms)
+    {
+        int fracts = ms % 100;
+        int seconds = (ms / 100) % 60;
+        int minuts = (ms / (100 * 60)) % 60;
+        int hours = ms / (100 * 60 * 60);
+
+        var disp =
+            "" +
+            (hours > 0 ? hours + " : " : "") +
+            (minuts < 10 ? "0" + minuts : minuts) +
+            " : " +
+            (seconds < 10 ? "0" + seconds : seconds) +
+            " : " +
+            (fracts < 10 ? "0" + fracts : fracts);
+
+        return disp;
+    }
+}
