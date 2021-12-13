@@ -1,0 +1,135 @@
+/* _content/InformaticsClubProjects/Pojects/MatchingGame.razor.rz.scp.css */
+.card-game[b-np01xug8hy] {
+    max-width: 600px;
+}
+
+.game-container[b-np01xug8hy] {
+    position: relative;
+    width: 91%;
+    padding-top: 95%;
+    margin: auto;
+}
+
+.grid[b-np01xug8hy] {
+    width: 100%;
+    height: 95%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    column-gap: 2px;
+    row-gap: 2px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
+.cell[b-np01xug8hy] {
+    position: relative;
+    background-color: gainsboro;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.btn-inactive[b-np01xug8hy] {
+    opacity: 0.5 !important;
+}
+
+.btn-active[b-np01xug8hy] {
+    opacity: 1;
+}
+
+.mask[b-np01xug8hy] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+/* _content/InformaticsClubProjects/Pojects/MemoryGame.razor.rz.scp.css */
+.container[b-t6n7puf5p9] {
+    max-width: 600px;
+    margin: auto;
+}
+
+.game-container[b-t6n7puf5p9] {
+    position: relative;
+    width: 91%;
+    padding-top: 95%;
+    margin: auto;
+}
+
+.grid[b-t6n7puf5p9] {
+    padding: 1%;
+    width: 100%;
+    height: 95%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 49% 49%;
+    grid-template-rows: 49% 49%;
+    column-gap: 2%;
+    row-gap: 2%;
+}
+
+.cell[b-t6n7puf5p9] {
+    user-select: none;
+    cursor: pointer;
+}
+
+.inactive[b-t6n7puf5p9] {
+    opacity: 0.4;
+}
+
+.hover[b-t6n7puf5p9] {
+    opacity: 0.7;
+}
+
+.active[b-t6n7puf5p9] {
+    opacity: 1;
+}
+
+.cursor-none[b-t6n7puf5p9] {
+    cursor: none !important;
+}
+/* _content/InformaticsClubProjects/Pojects/TicTacToe.razor.rz.scp.css */
+.container[b-4s1iy0z80o] {
+    max-width: 600px;
+    margin: auto;
+}
+
+.game-container[b-4s1iy0z80o] {
+    position: relative;
+    width: 91%;
+    padding-top: 95%;
+    margin: auto;
+}
+
+.grid[b-4s1iy0z80o] {
+    width: 100%;
+    height: 95%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    column-gap: 2px;
+    row-gap: 2px;
+}
+
+.cell[b-4s1iy0z80o] {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+}

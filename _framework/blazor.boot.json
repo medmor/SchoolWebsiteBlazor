@@ -10,10 +10,10 @@
       "Havit.Blazor.Components.Web.Bootstrap.dll": "sha256-1at6GE6wQfk8m5vKcdNVSEE4LAaUD2Tl1jupufr30Jc=",
       "Havit.Blazor.Components.Web.dll": "sha256-ViseRVdlXb6G7NbFa7KI5dpP5jkyFiVMIUp3XWGsTyI=",
       "Havit.Core.dll": "sha256-shSiV\/cHGOV6DuNeiFb9s2O0CwZ32dzcHbN64tRS9kE=",
-      "Microsoft.AspNetCore.Components.dll": "sha256-2T8iGGJOz5rtYPEC1rP4hL3TcCvbWyKy7VTyI8ejS+w=",
+      "Microsoft.AspNetCore.Components.dll": "sha256-5lBkxLYFJxssVpot+ROWt9woT2wbig9VxvrU9u5SBcM=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-gWNvMtkrqWmsa9NLWrTIRdz9iHuAciwogT3UVvtflws=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-zdqIvwkRaMJ9M6g5n2vyNjQUNHlhg5HGKFPN9yd8YDY=",
-      "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-pqhC3F7v6C59SoQxb0Ai\/6BG\/zY\/Sqq6pvULGp6P\/Go=",
+      "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-GkZLbxGiHrgQRdP2KUTtmidgfGyaqRntbU4qTg3GKQM=",
       "Microsoft.Extensions.Configuration.Abstractions.dll": "sha256-zhFtW4kE16TdrpPne9I1Cu9o0KYzrS50VE9MVSifJg4=",
       "Microsoft.Extensions.Configuration.dll": "sha256-QPR+1IXNcA28b\/gXw3uZ8aRigHIZUJ1KWSH02kkCg7Q=",
       "Microsoft.Extensions.Configuration.Json.dll": "sha256-fF3xaP+hT6R3GYUctLIY1ixaXQ8mrHzwWHHf2dKfueU=",
@@ -21,14 +21,15 @@
       "Microsoft.Extensions.DependencyInjection.dll": "sha256-pYDNELbgbO60zgvgH5SP8004wkA0+o\/KlQxFXl\/uS2A=",
       "Microsoft.Extensions.Localization.Abstractions.dll": "sha256-IsNsEj5mpI14z1hJ6TttJINJodUpxrlSZjq2BG1crj4=",
       "Microsoft.Extensions.Localization.dll": "sha256-zyRiRLOOb8I9JL\/\/\/hNhZqRp7eJ85X7e61CkvHfJFlg=",
-      "Microsoft.Extensions.Logging.Abstractions.dll": "sha256-94EKRuJ75kQ8yU4ch1Nrg0d4TXA53rp9DculoO6tL08=",
+      "Microsoft.Extensions.Logging.Abstractions.dll": "sha256-t83s6k7KE7Sq\/YkOGQXq38CWp3gjzeFDgK83++sZjk4=",
       "Microsoft.Extensions.Logging.dll": "sha256-aj8Tk1BLrOE4y41oBvw\/VGDdmvACVEpGmiEDNrA7Hco=",
       "Microsoft.Extensions.Options.dll": "sha256-1tB1TdOK1QaMSk7+PPe5sikuuMC9hs8bkujWqFMdAx4=",
       "Microsoft.Extensions.Primitives.dll": "sha256-YColTWA58whC+8aBjv1O7HgsyYrbHTba601EkNDWAlo=",
       "Microsoft.JSInterop.dll": "sha256-1HmhQjtkNER1s7c5hmtiQC\/mZHwLjUjCO8X2KiLIXy0=",
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-vnE\/f0iqOlVKaRjTpLiArMb+lw6INqH0HhqcMh9FPe0=",
       "netstandard.dll": "sha256-j9vfTNQidkLz1le8CuX8m0X8kstbOruCEN9Se+eqrXQ=",
-      "SchoolWebsite.dll": "sha256-0IRwfiC\/YP9CQAN6IzciPjIe08CLK4etJDvGwsoXMZY=",
+      "SchoolWebsite.dll": "sha256-kSJJ750VIYdh8f3QHraTXOnhHeZn8Jx35Cycv\/+oKNo=",
+      "SharedProject.dll": "sha256-fIvVT\/IUpldvB9715DBQ4GgoUQrNVHvUR\/5uC3+6rEE=",
       "System.Collections.Concurrent.dll": "sha256-E3zKyPRbOlK0zr1I9Eeg+1bvLoCMbW9olWbeRwWJ7uM=",
       "System.Collections.dll": "sha256-PGM66mleCks9nEGNKGUrbk1WS74eQ1i35dPRdYHeFX4=",
       "System.Collections.NonGeneric.dll": "sha256-QVV5v6Y3KEb6dTAKJUhZ4qTULK85gH5eeHkHwZTlv6U=",
@@ -48,11 +49,11 @@
       "System.Net.Mail.dll": "sha256-raFinMbLZ5pW\/tX8iHMBADSiyX718dvy9aiv1dKI8u8=",
       "System.Net.Primitives.dll": "sha256-YxJ4oNaFF8vcNfLQZ+4JA67yUTyNISnG53\/0AxKiTlM=",
       "System.ObjectModel.dll": "sha256-83Y9NM5C7H0dghs9kZ3HpUO52Lg\/dTMOlqKnqGyk7gI=",
-      "System.Private.CoreLib.dll": "sha256-LzsOo04pEqBMYtzt64v\/XSJvf0vAfove704B8XGIU\/o=",
+      "System.Private.CoreLib.dll": "sha256-FC0g9SYcsp5AEDDI57TTeR3gmtpnonBOzvYBb8tS8nQ=",
       "System.Private.Runtime.InteropServices.JavaScript.dll": "sha256-w67FuYCOR0dpIqDzT02wryS7BNENTa4tPBgUrsr04tU=",
       "System.Private.Uri.dll": "sha256-OP\/2lRqTysOxXsDZpXzsHILHT8lJ0MismHGsWEPTULc=",
       "System.Runtime.CompilerServices.Unsafe.dll": "sha256-lWLrP2SkeEtjbEdvnCokKxYOu+LNxC\/N+o9fErOPhWw=",
-      "System.Runtime.dll": "sha256-HRJdMI5xh\/dNcNJovnWXcyUatt5ROKpMhbU1dwoiD04=",
+      "System.Runtime.dll": "sha256-XI6Vidg+j5JnYapRb0FJAyK3TBQrWjw\/2QcNX1BgGIo=",
       "System.Runtime.InteropServices.RuntimeInformation.dll": "sha256-TYB2Jkm4CmHcdVWkVa7jltD8JaH8k+xsWHu7Os47QXE=",
       "System.Runtime.Serialization.Primitives.dll": "sha256-\/DjG8LdLC0OlZ3JBBtqhHx\/r9fdn\/x+fudRD6\/m3Fvo=",
       "System.Security.Cryptography.Algorithms.dll": "sha256-b+jmqG6pQgNfffUjQ0uW\/oQJQ7FCR1nGkCALI4sZUi0=",
@@ -64,7 +65,9 @@
       "System.Threading.dll": "sha256-12PhN9zJ6XBeRiKkiXbbT3\/brPICIBhMGwXHowG5an8="
     },
     "extensions": null,
-    "lazyAssembly": null,
+    "lazyAssembly": {
+      "InformaticsClubProjects.dll": "sha256-E0511iZ1yGAiDr7CXA8p71M4gR1GLZbK6sEfAwLtHC8="
+    },
     "libraryInitializers": null,
     "pdb": null,
     "runtime": {
@@ -78,7 +81,7 @@
     },
     "satelliteResources": {
       "ar": {
-        "ar\/SchoolWebsite.resources.dll": "sha256-G9yCCGQ4YC2lnseXf\/4YhZkfPmrNfhdCueMniK+3SWA="
+        "ar\/SharedProject.resources.dll": "sha256-XMK+grbkhRhaK6P6XxR9Amz1DLxSi87UyimM9qffTHQ="
       },
       "cs": {
         "cs\/Havit.Blazor.Components.Web.Bootstrap.resources.dll": "sha256-2bE1Pf8Wl9sYLREfmJ3bPXtGPzYHUXihWMaAKWGlC6k="

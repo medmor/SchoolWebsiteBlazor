@@ -1,0 +1,14 @@
+/* _content/SharedProject/Layouts/MainLayout.razor.rz.scp.css */
+#intro-example[b-fj6gh26dg4] {
+    height: 600px;
+    width: 100%;
+    position: absolute;
+    z-index: -100;
+    background-size: cover;
+}
+
+@media (max-width: 992px) {
+    #intro-example[b-fj6gh26dg4] {
+        height: 400px;
+    }
+}
