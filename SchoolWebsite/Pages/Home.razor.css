@@ -39,8 +39,12 @@ main {
 }
 
 @media (max-width: 720px) {
-    #intro-example {
+    #cover-image-container {
         height: 500px;
+    }
+
+    header {
+        height: 250px;
     }
 
     main {
